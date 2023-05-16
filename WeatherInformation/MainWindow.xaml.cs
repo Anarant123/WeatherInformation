@@ -42,6 +42,7 @@ namespace WeatherInformation
                     PropertyNameCaseInsensitive = true // Установка свойства PropertyNameCaseInsensitive на true
                 };
 
+
                 WeatherResponce weatherResponce = JsonSerializer.Deserialize<WeatherResponce>(jsonResponse, options);
 
                 tbInfo.Text = $"Сегодня на улице {weatherResponce.Weather.First().Description} \n" +
