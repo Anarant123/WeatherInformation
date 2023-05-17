@@ -105,7 +105,8 @@
         <StackPanel Orientation="Horizontal">
             <TextBox x:Name="tbCity" Tag="Введите название города" 
                  Width="250"
-                 HorizontalAlignment="Left"/>
+                 HorizontalAlignment="Left"
+                 PreviewTextInput="tbCity_PreviewTextInput"/>
             <Separator Opacity="0" Width="10"/>
             <Button x:Name="btnGetInfo"
                 Content="Получить информацию"
@@ -116,6 +117,7 @@
         <Separator Opacity="0" Height="10"/>
         <TextBox x:Name="tbInfo"
                  TextWrapping="Wrap"
-                 Height="300"/>
+                 Height="300"
+                 IsReadOnly="True"/>
     </StackPanel>
 </Window>
